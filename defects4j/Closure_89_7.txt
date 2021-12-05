@@ -1,0 +1,166 @@
+Checking out 4b065734 to /tmp/script....................................... OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 4b065734:e7ad2425..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Closure-89b..................................... OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/script && /defects4j/major/bin/ant -f /defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/defects4j -Dd4j.dir.projects=/defects4j/framework/projects -Dbasedir=/tmp/script -Dbuild.compiler=javac1.7  compile 2>&1
+Buildfile: /defects4j/framework/projects/defects4j.build.xml
+
+compile:
+    [mkdir] Created dir: /tmp/script/build/classes
+    [javac] /tmp/script/build.xml:148: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to /tmp/script/build/classes
+    [javac] /tmp/script/build.xml:154: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 356 source files to /tmp/script/build/classes
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:46: error: unmappable character for encoding ASCII
+    [javac]  * Banning, John. ???An efficient way to find the side effects of procedure
+    [javac]                   ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:46: error: unmappable character for encoding ASCII
+    [javac]  * Banning, John. ???An efficient way to find the side effects of procedure
+    [javac]                    ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:46: error: unmappable character for encoding ASCII
+    [javac]  * Banning, John. ???An efficient way to find the side effects of procedure
+    [javac]                     ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                            ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                             ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                              ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                                     ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                                      ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                                       ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:248: error: unmappable character for encoding ASCII
+    [javac]    * 3.    file: ???out.js???
+    [javac]                  ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:248: error: unmappable character for encoding ASCII
+    [javac]    * 3.    file: ???out.js???
+    [javac]                   ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:248: error: unmappable character for encoding ASCII
+    [javac]    * 3.    file: ???out.js???
+    [javac]                    ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:248: error: unmappable character for encoding ASCII
+    [javac]    * 3.    file: ???out.js???
+    [javac]                           ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:248: error: unmappable character for encoding ASCII
+    [javac]    * 3.    file: ???out.js???
+    [javac]                            ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:248: error: unmappable character for encoding ASCII
+    [javac]    * 3.    file: ???out.js???
+    [javac]                             ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:267: error: unmappable character for encoding ASCII
+    [javac]    * Line 5: ???lineMaps??? field is a JSON array, where each entry represents a
+    [javac]              ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:267: error: unmappable character for encoding ASCII
+    [javac]    * Line 5: ???lineMaps??? field is a JSON array, where each entry represents a
+    [javac]               ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:267: error: unmappable character for encoding ASCII
+    [javac]    * Line 5: ???lineMaps??? field is a JSON array, where each entry represents a
+    [javac]                ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:267: error: unmappable character for encoding ASCII
+    [javac]    * Line 5: ???lineMaps??? field is a JSON array, where each entry represents a
+    [javac]                         ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:267: error: unmappable character for encoding ASCII
+    [javac]    * Line 5: ???lineMaps??? field is a JSON array, where each entry represents a
+    [javac]                          ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:267: error: unmappable character for encoding ASCII
+    [javac]    * Line 5: ???lineMaps??? field is a JSON array, where each entry represents a
+    [javac]                           ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:272: error: unmappable character for encoding ASCII
+    [javac]    *     server or removing repeated prefix values in the ???sources??? entry.
+    [javac]                                                           ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:272: error: unmappable character for encoding ASCII
+    [javac]    *     server or removing repeated prefix values in the ???sources??? entry.
+    [javac]                                                            ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:272: error: unmappable character for encoding ASCII
+    [javac]    *     server or removing repeated prefix values in the ???sources??? entry.
+    [javac]                                                             ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:272: error: unmappable character for encoding ASCII
+    [javac]    *     server or removing repeated prefix values in the ???sources??? entry.
+    [javac]                                                                     ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:272: error: unmappable character for encoding ASCII
+    [javac]    *     server or removing repeated prefix values in the ???sources??? entry.
+    [javac]                                                                      ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:272: error: unmappable character for encoding ASCII
+    [javac]    *     server or removing repeated prefix values in the ???sources??? entry.
+    [javac]                                                                       ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:273: error: unmappable character for encoding ASCII
+    [javac]    * Line 10: A list of sources used by the ???mappings??? entry relative to the
+    [javac]                                             ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:273: error: unmappable character for encoding ASCII
+    [javac]    * Line 10: A list of sources used by the ???mappings??? entry relative to the
+    [javac]                                              ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:273: error: unmappable character for encoding ASCII
+    [javac]    * Line 10: A list of sources used by the ???mappings??? entry relative to the
+    [javac]                                               ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:273: error: unmappable character for encoding ASCII
+    [javac]    * Line 10: A list of sources used by the ???mappings??? entry relative to the
+    [javac]                                                        ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:273: error: unmappable character for encoding ASCII
+    [javac]    * Line 10: A list of sources used by the ???mappings??? entry relative to the
+    [javac]                                                         ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:273: error: unmappable character for encoding ASCII
+    [javac]    * Line 10: A list of sources used by the ???mappings??? entry relative to the
+    [javac]                                                          ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:275: error: unmappable character for encoding ASCII
+    [javac]    * Line 11: A list of symbol names used by the ???mapping??? entry.  This list
+    [javac]                                                  ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:275: error: unmappable character for encoding ASCII
+    [javac]    * Line 11: A list of symbol names used by the ???mapping??? entry.  This list
+    [javac]                                                   ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:275: error: unmappable character for encoding ASCII
+    [javac]    * Line 11: A list of symbol names used by the ???mapping??? entry.  This list
+    [javac]                                                    ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:275: error: unmappable character for encoding ASCII
+    [javac]    * Line 11: A list of symbol names used by the ???mapping??? entry.  This list
+    [javac]                                                            ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:275: error: unmappable character for encoding ASCII
+    [javac]    * Line 11: A list of symbol names used by the ???mapping??? entry.  This list
+    [javac]                                                             ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:275: error: unmappable character for encoding ASCII
+    [javac]    * Line 11: A list of symbol names used by the ???mapping??? entry.  This list
+    [javac]                                                              ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:284: error: unmappable character for encoding ASCII
+    [javac]    *     This can either be an string or index into the ???names??? field.
+    [javac]                                                         ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:284: error: unmappable character for encoding ASCII
+    [javac]    *     This can either be an string or index into the ???names??? field.
+    [javac]                                                          ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:284: error: unmappable character for encoding ASCII
+    [javac]    *     This can either be an string or index into the ???names??? field.
+    [javac]                                                           ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:284: error: unmappable character for encoding ASCII
+    [javac]    *     This can either be an string or index into the ???names??? field.
+    [javac]                                                                 ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:284: error: unmappable character for encoding ASCII
+    [javac]    *     This can either be an string or index into the ???names??? field.
+    [javac]                                                                  ^
+    [javac] /tmp/script/src/com/google/javascript/jscomp/SourceMap2.java:284: error: unmappable character for encoding ASCII
+    [javac]    *     This can either be an string or index into the ???names??? field.
+    [javac]                                                                   ^
+    [javac] 45 errors
+
+BUILD FAILED
+/tmp/script/build.xml:154: Compile failed; see the compiler error output for details.
+
+Total time: 2 seconds
+Cannot compile sources! at /defects4j/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /defects4j/framework/bin/defects4j line 195.

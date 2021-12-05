@@ -1,0 +1,4 @@
+Couldn't find project repositories! Did you (re)run 'defects4j/init.sh'?
+
+Compilation failed in require at /defects4j/framework/bin/defects4j line 33.
+BEGIN failed--compilation aborted at /defects4j/framework/bin/defects4j line 33.

@@ -1,0 +1,3 @@
+cCannot open config file (/tmp/script/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/script at /defects4j/framework/core/Vcs.pm line 285.
+Compilation failed in require at /defects4j/framework/bin/defects4j line 195.

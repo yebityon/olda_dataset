@@ -1,0 +1,47 @@
+Checking out b0cba9a7 to /tmp/script....................................... OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff b0cba9a7:51461f1c..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Math-22b........................................ OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /tmp/script && /defects4j/major/bin/ant -f /defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/defects4j -Dd4j.dir.projects=/defects4j/framework/projects -Dbasedir=/tmp/script -Dbuild.compiler=javac1.7  compile.tests 2>&1
+Buildfile: /defects4j/framework/projects/defects4j.build.xml
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 388 source files to /tmp/script/target/test-classes
+    [javac] /tmp/script/src/test/java/org/apache/commons/math3/exception/util/LocalizedFormatsTest.java:21: error: unmappable character for encoding ASCII
+    [javac]  * Copyright 2010 CS Communication & Syst??mes
+    [javac]                                          ^
+    [javac] /tmp/script/src/test/java/org/apache/commons/math3/exception/util/LocalizedFormatsTest.java:21: error: unmappable character for encoding ASCII
+    [javac]  * Copyright 2010 CS Communication & Syst??mes
+    [javac]                                           ^
+    [javac] 2 errors
+
+BUILD FAILED
+/tmp/script/build.xml:180: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+Cannot compile tests! at /defects4j/framework/bin/d4j/d4j-compile line 83.
+Compilation failed in require at /defects4j/framework/bin/defects4j line 195.

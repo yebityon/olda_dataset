@@ -1,0 +1,289 @@
+Checking out 1d57c20d to /tmp/script....................................... OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 1d57c20d:36d9b59e..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JacksonDatabind-12b............................. OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /tmp/script && /defects4j/major/bin/ant -f /defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/defects4j -Dd4j.dir.projects=/defects4j/framework/projects -Dbasedir=/tmp/script -Dbuild.compiler=javac1.7  compile.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /defects4j/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+jackson-databind-from-maven.compile:
+    [javac] /tmp/script/maven-build.xml:87: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile:
+
+jackson-databind-from-maven.compile-tests:
+    [mkdir] Created dir: /tmp/script/target/test-classes
+    [javac] /tmp/script/maven-build.xml:115: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 281 source files to /tmp/script/target/test-classes
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:12: error: unmappable character for encoding ASCII
+    [javac]  *     <li><code>prop???</code> (trailing space) for fields</li>
+    [javac]                      ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:12: error: unmappable character for encoding ASCII
+    [javac]  *     <li><code>prop???</code> (trailing space) for fields</li>
+    [javac]                       ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:12: error: unmappable character for encoding ASCII
+    [javac]  *     <li><code>prop???</code> (trailing space) for fields</li>
+    [javac]                        ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:36: error: unmappable character for encoding ASCII
+    [javac]                 if (name.endsWith("???")) {                    
+    [javac]                                    ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:36: error: unmappable character for encoding ASCII
+    [javac]                 if (name.endsWith("???")) {                    
+    [javac]                                     ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:36: error: unmappable character for encoding ASCII
+    [javac]                 if (name.endsWith("???")) {                    
+    [javac]                                      ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:46: error: unmappable character for encoding ASCII
+    [javac]         public final String prop???;
+    [javac]                                 ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:46: error: unmappable character for encoding ASCII
+    [javac]         public final String prop???;
+    [javac]                                  ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:46: error: unmappable character for encoding ASCII
+    [javac]         public final String prop???;
+    [javac]                                   ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:47: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                           ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:47: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                            ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:47: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:50: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                 ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:50: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                  ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:50: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                   ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:57: error: unmappable character for encoding ASCII
+    [javac]         public final String prop???;
+    [javac]                                 ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:57: error: unmappable character for encoding ASCII
+    [javac]         public final String prop???;
+    [javac]                                  ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:57: error: unmappable character for encoding ASCII
+    [javac]         public final String prop???;
+    [javac]                                   ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:58: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                           ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:58: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                            ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:58: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:59: error: unmappable character for encoding ASCII
+    [javac]         public String getProp() { return prop???; }
+    [javac]                                              ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:59: error: unmappable character for encoding ASCII
+    [javac]         public String getProp() { return prop???; }
+    [javac]                                               ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:59: error: unmappable character for encoding ASCII
+    [javac]         public String getProp() { return prop???; }
+    [javac]                                                ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:62: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                 ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:62: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                  ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:62: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                   ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:69: error: unmappable character for encoding ASCII
+    [javac]         public String prop???;
+    [javac]                           ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:69: error: unmappable character for encoding ASCII
+    [javac]         public String prop???;
+    [javac]                            ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:69: error: unmappable character for encoding ASCII
+    [javac]         public String prop???;
+    [javac]                             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:70: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                           ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:70: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                            ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:70: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:71: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                          ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:71: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                           ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:71: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                            ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:71: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                              ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:71: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                               ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:71: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                                ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:74: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                 ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:74: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                  ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:74: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                   ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:81: error: unmappable character for encoding ASCII
+    [javac]         public String prop???;
+    [javac]                           ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:81: error: unmappable character for encoding ASCII
+    [javac]         public String prop???;
+    [javac]                            ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:81: error: unmappable character for encoding ASCII
+    [javac]         public String prop???;
+    [javac]                             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:82: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                           ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:82: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                            ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:82: error: unmappable character for encoding ASCII
+    [javac]         public String prop() { return prop???; }
+    [javac]                                             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:83: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                          ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:83: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                           ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:83: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                            ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:83: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                              ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:83: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                               ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:83: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                                ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:84: error: unmappable character for encoding ASCII
+    [javac]         public String getProp() { return prop???; }
+    [javac]                                              ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:84: error: unmappable character for encoding ASCII
+    [javac]         public String getProp() { return prop???; }
+    [javac]                                               ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:84: error: unmappable character for encoding ASCII
+    [javac]         public String getProp() { return prop???; }
+    [javac]                                                ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:85: error: unmappable character for encoding ASCII
+    [javac]         public void setProp(String p) { prop??? = p; }
+    [javac]                                             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:85: error: unmappable character for encoding ASCII
+    [javac]         public void setProp(String p) { prop??? = p; }
+    [javac]                                              ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:85: error: unmappable character for encoding ASCII
+    [javac]         public void setProp(String p) { prop??? = p; }
+    [javac]                                               ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:88: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                 ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:88: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                  ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:88: error: unmappable character for encoding ASCII
+    [javac]             prop??? = prop;
+    [javac]                   ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:97: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { _prop_impl = p; }
+    [javac]                          ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:97: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { _prop_impl = p; }
+    [javac]                           ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:97: error: unmappable character for encoding ASCII
+    [javac]         public void prop_???(String p) { _prop_impl = p; }
+    [javac]                            ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:50: error: not a statement
+    [javac]             prop??? = prop;
+    [javac]             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:50: error: not a statement
+    [javac]             prop??? = prop;
+    [javac]                       ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:62: error: not a statement
+    [javac]             prop??? = prop;
+    [javac]             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:62: error: not a statement
+    [javac]             prop??? = prop;
+    [javac]                       ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:71: error: ';' expected
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                      ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:71: error: not a statement
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                          ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:71: error: not a statement
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                                    ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:74: error: not a statement
+    [javac]             prop??? = prop;
+    [javac]             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:74: error: not a statement
+    [javac]             prop??? = prop;
+    [javac]                       ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:83: error: ';' expected
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                      ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:83: error: not a statement
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                          ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:83: error: not a statement
+    [javac]         public void prop_???(String p) { prop??? = p; }
+    [javac]                                                    ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:85: error: not a statement
+    [javac]         public void setProp(String p) { prop??? = p; }
+    [javac]                                         ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:85: error: not a statement
+    [javac]         public void setProp(String p) { prop??? = p; }
+    [javac]                                                   ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:88: error: not a statement
+    [javac]             prop??? = prop;
+    [javac]             ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:88: error: not a statement
+    [javac]             prop??? = prop;
+    [javac]                       ^
+    [javac] /tmp/script/src/test/java/com/fasterxml/jackson/failing/TestScalaLikeImplicitProperties.java:97: error: ';' expected
+    [javac]         public void prop_???(String p) { _prop_impl = p; }
+    [javac]                                      ^
+    [javac] 83 errors
+
+BUILD FAILED
+/tmp/script/maven-build.xml:115: Compile failed; see the compiler error output for details.
+
+Total time: 0 seconds
+Cannot compile tests! at /defects4j/framework/bin/d4j/d4j-compile line 83.
+Compilation failed in require at /defects4j/framework/bin/defects4j line 195.

@@ -1,0 +1,45 @@
+Checking out 79a4b57f to /tmp/script....................................... OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 79a4b57f:23ab583c..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JacksonXml-3b................................... OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/script && /defects4j/major/bin/ant -f /defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/defects4j -Dd4j.dir.projects=/defects4j/framework/projects -Dbasedir=/tmp/script -Dbuild.compiler=javac1.7  compile 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /defects4j/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+jackson-dataformat-xml-from-maven.compile:
+    [mkdir] Created dir: /tmp/script/target/classes
+    [javac] /tmp/script/maven-build.xml:88: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 36 source files to /tmp/script/target/classes
+    [javac] /tmp/script/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/UnwrappingXmlBeanSerializer.java:17: error: unmappable character for encoding ASCII
+    [javac]  * @author Pascal G??linas
+    [javac]                    ^
+    [javac] /tmp/script/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/UnwrappingXmlBeanSerializer.java:17: error: unmappable character for encoding ASCII
+    [javac]  * @author Pascal G??linas
+    [javac]                     ^
+    [javac] /tmp/script/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializer.java:19: error: unmappable character for encoding ASCII
+    [javac]  * @author Pascal G??linas
+    [javac]                    ^
+    [javac] /tmp/script/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializer.java:19: error: unmappable character for encoding ASCII
+    [javac]  * @author Pascal G??linas
+    [javac]                     ^
+    [javac] 4 errors
+
+BUILD FAILED
+/tmp/script/maven-build.xml:88: Compile failed; see the compiler error output for details.
+
+Total time: 0 seconds
+Cannot compile sources! at /defects4j/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /defects4j/framework/bin/defects4j line 195.

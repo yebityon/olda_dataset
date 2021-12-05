@@ -1,0 +1,52 @@
+Checking out a0f3e043 to /tmp/script....................................... OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff a0f3e043:26cf6d54..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Math-98b........................................ OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/script && /defects4j/major/bin/ant -f /defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/defects4j -Dd4j.dir.projects=/defects4j/framework/projects -Dbasedir=/tmp/script -Dbuild.compiler=javac1.7  compile 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /defects4j/framework/projects/defects4j.build.xml
+
+init:
+    [mkdir] Created dir: /tmp/script/target/lib
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/script/target/classes
+    [javac] /tmp/script/build.xml:46: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 231 source files to /tmp/script/target/classes
+    [javac] /tmp/script/src/java/org/apache/commons/math/ode/SwitchException.java:25: error: unmappable character for encoding ASCII
+    [javac]  * @version $Revision: 620312 $ $Date: 2008-02-10 20:28:59 +0100 (dim., 10 f??vr. 2008) $
+    [javac]                                                                             ^
+    [javac] /tmp/script/src/java/org/apache/commons/math/ode/SwitchException.java:25: error: unmappable character for encoding ASCII
+    [javac]  * @version $Revision: 620312 $ $Date: 2008-02-10 20:28:59 +0100 (dim., 10 f??vr. 2008) $
+    [javac]                                                                              ^
+    [javac] /tmp/script/src/java/org/apache/commons/math/stat/descriptive/MultivariateSummaryStatistics.java:65: error: unmappable character for encoding ASCII
+    [javac]  * @version $Revision: 618097 $ $Date: 2008-02-03 22:39:08 +0100 (dim., 03 f??vr. 2008) $
+    [javac]                                                                             ^
+    [javac] /tmp/script/src/java/org/apache/commons/math/stat/descriptive/MultivariateSummaryStatistics.java:65: error: unmappable character for encoding ASCII
+    [javac]  * @version $Revision: 618097 $ $Date: 2008-02-03 22:39:08 +0100 (dim., 03 f??vr. 2008) $
+    [javac]                                                                              ^
+    [javac] /tmp/script/src/java/org/apache/commons/math/stat/descriptive/SynchronizedMultivariateSummaryStatistics.java:32: error: unmappable character for encoding ASCII
+    [javac]  * @version $Revision: 618097 $ $Date: 2008-02-03 22:39:08 +0100 (dim., 03 f??vr. 2008) $
+    [javac]                                                                             ^
+    [javac] /tmp/script/src/java/org/apache/commons/math/stat/descriptive/SynchronizedMultivariateSummaryStatistics.java:32: error: unmappable character for encoding ASCII
+    [javac]  * @version $Revision: 618097 $ $Date: 2008-02-03 22:39:08 +0100 (dim., 03 f??vr. 2008) $
+    [javac]                                                                              ^
+    [javac] 6 errors
+
+BUILD FAILED
+/tmp/script/build.xml:46: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+Cannot compile sources! at /defects4j/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /defects4j/framework/bin/defects4j line 195.

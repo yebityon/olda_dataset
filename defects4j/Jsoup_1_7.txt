@@ -1,0 +1,10 @@
+Checking out 27a52f90 to /tmp/script....................................... FAIL
+Executed command: git clone /defects4j/project_repos/jsoup.git /tmp/script 2>&1 && cd /tmp/script && git checkout 27a52f90a25699bebe23ff1ff94d6db361fdb11d 2>&1
+Cloning into '/tmp/script'...
+done.
+error: Your local changes to the following files would be overwritten by checkout:
+	src/test/java/org/jsoup/parser/TokeniserStateTest.java
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+Cannot checkout program version! at /defects4j/framework/bin/d4j/d4j-checkout line 96.
+Compilation failed in require at /defects4j/framework/bin/defects4j line 195.
